@@ -1,0 +1,274 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #d7d7d7;
+    font-family: candara, helvetica, sans-serif;
+    margin: 0;
+    padding: 10px 50px 50px 50px;
+}
+
+.div1 {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.menu {
+    background-color: #404040;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 5px black;
+}
+
+.menu a {
+    padding: 19px;
+    color: lightgray;
+    text-decoration: none;
+    transition: background-color 0.5s;
+    text-shadow: 2px 2px 2px black;
+}
+
+.menu a:hover {
+    background-color: black;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.coluna-esquerda {
+    float: left;
+    width: 75%;
+}
+
+.coluna-direita {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.card {
+    background-color: white;
+    padding-top: 1px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 2px;
+}
+
+#promoçãovalorbanner {
+    height: 250px;
+    background-image: url('images/creatina.png');
+    background-size: cover;
+    background-position: 50%;
+    color: #d7d7d7;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    position: relative;
+    text-shadow: 1px 1px 1px black;
+    cursor: pointer;
+}
+
+#promoçãovalorbanner:hover {
+    box-shadow: 3px 3px 3px gray;
+}
+
+#valorbanner {
+    position: absolute;
+    bottom: 0px;
+
+}
+
+.sobreimg {
+    width: 100%;
+    border-radius: 1000px;
+    box-shadow: 3px 3px 3px black;
+}
+
+.sobreimg:hover {
+    box-shadow: 3px 3px 3px gray;
+}
+
+
+#cardceo {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    text-shadow: 1px 1px 1px white;
+    text-align: center;
+}
+
+.sobretexto a {
+    color: #000000;
+    text-shadow: 1px 1px 1px white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.promo img {
+    height: 150px;
+    border-radius: 1000px;
+}
+
+
+
+#cardpromo {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    text-shadow: 1px 1px 1px white;
+    text-align: center;
+}
+
+.promo:hover {
+    box-shadow: 3px 3px 3px gray;
+    cursor: pointer;
+}
+
+.promo {
+    box-shadow: 3px 3px 3px black;
+}
+
+#cardsocial {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    text-shadow: 1px 1px 1px white;
+    text-align: center;
+}
+
+.social {
+    box-shadow: 3px 3px 3px black;
+}
+
+.social:hover {
+    box-shadow: 3px 3px 3px gray;
+    cursor: pointer;
+
+}
+
+#wheys {
+    background-image: url(images/paulo1.jpg);
+    background-size: cover;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    color: #d7d7d7;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    position: relative;
+    text-shadow: 1px 1px 1px black;
+    cursor: pointer;
+}
+
+.produto img {
+    height: 250px;
+    border: 2px solid #000000;
+    border-radius: 1000px;
+
+}
+
+.produto {
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.produto:hover {
+    box-shadow: 5px 10px 15px #151515;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr))
+}
+
+#maisvend {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    text-shadow: 1px 1px 1px white;
+    text-align: center;
+
+}
+
+#numb {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    text-shadow: 1px 1px 1px white;
+    text-align: center;
+
+}
+
+
+@media screen and (max-width:600px) {
+
+    .menu{
+        display: block;
+        width: 350px;
+        height: 60px;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    #menutext{
+        padding: 0;
+        width: 10px;
+        margin-right: 20px;
+        font-size: 15px;
+    }
+
+    #menutext:hover {
+        color: white;
+    }
+    
+
+    .coluna-esquerda{
+        width: 350px;
+    }
+
+    img{
+        width: auto;
+    }
+
+    .produto{
+        width: 320px;
+    }
+
+    .tituloproduto{
+        font-size: 30px;
+    }
+
+    .preçodoproduto{
+        font-size: 15px;
+    }
+
+    .card{
+        width: 350px;
+        padding: 0px;
+    }
+
+    #promoçãobanner, #valorbanner, .sobretexto, .promoprod{
+        font-size: 20px;
+    }
+
+
+}
+
+.footer {
+ margin-bottom: 100px;   
+}
